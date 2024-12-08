@@ -12,17 +12,20 @@
     <!-- Navbar -->
     <nav>
         <div class="logo">
-            <img src="src/file.png" alt="InCySe Logo" height="80">
+            <img src="src/file.png" alt="InCySe Logo" height="200">
         </div>
         <ul>
             <li><a href="#objectives">Objectives</a></li>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#details">Details</a></li>
+            <li><a href="#prizes">Prizes</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+        <div class="right-logo">
+            <img src="src/OSU_logo.png" alt="Second Logo" height="50">
+        </div>
+        <!-- <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button> -->
     </nav>
 
     <!-- Hero Section -->
@@ -30,7 +33,7 @@
         <div class="overlay">
             <h1 class="typing">InCySe Hackathon</h1>
             <p>Industrial Cybersecurity in a Connected World</p>
-            <a href="#registration" class="btn">Register Now</a>
+            <!-- <a href="#registration" class="btn">Register Now</a> -->
         </div>
     </header>
 
@@ -56,67 +59,110 @@
         </ul>
     </section>
 
-    <!-- Countdown Section -->
-    <section id="countdown" class="section">
-        <h2>Countdown to Hackathon</h2>
-        <div id="timer">
-            <span id="days"></span> Days 
-            <span id="hours"></span> Hours 
-            <span id="minutes"></span> Minutes 
-            <span id="seconds"></span> Seconds
-        </div>
-    </section>
-
-    <!-- Timeline Section -->
+    <!-- Horizontal Timeline Section -->
     <section id="timeline" class="section">
         <h2>Timeline</h2>
-        <ul>
-            <li><strong>March 21, 2025:</strong> Registration Opens</li>
-            <li><strong>April 2, 2025:</strong> InCySe Keynote</li>
-            <li><strong>April 4, 2025:</strong> Tutorials and Workshops</li>
-            <li><strong>April 11, 2025:</strong> Team Demonstrations and Awards</li>
-        </ul>
-    </section>
-
-    <!-- Registration Progress Section -->
-    <section id="registration-progress" class="section">
-        <h2>Registration Progress</h2>
-        <div class="progress-container">
-            <div class="progress-bar" style="width: 75%;"></div>
+        <div class="timeline-buttons">
+            <div class="timeline-button" data-content="content-1">
+                <i class="fas fa-calendar-alt"></i> March 21, 2025: Registration Opens
+            </div>
+            <div class="timeline-button" data-content="content-2">
+                <i class="fas fa-lightbulb"></i> April 2, 2025: Learning and Ideation
+            </div>
+            <div class="timeline-button" data-content="content-3">
+                <i class="fas fa-tools"></i> April 4, 2025: Tutorials and Workshops
+            </div>
+            <div class="timeline-button" data-content="content-4">
+                <i class="fas fa-presentation"></i> April 11, 2025: Demonstration and Final Presentation
+            </div>
         </div>
-        <p>75% spots filled!</p>
+        <div id="timeline-content">
+            <div id="content-1" class="timeline-content">
+                <div class="timeline-card">
+                    <h3>Registration Opens</h3>
+                    <p>Participants can register online through the official hackathon website. Ensure all team members are registered by the deadline to secure a spot.</p>
+                </div>
+            </div>
+            <div id="content-2" class="timeline-content">
+                <div class="timeline-card">
+                    <h3>Learning and Ideation</h3>
+                    <ul>
+                        <li><strong>Keynote & Inspiration - 1 Hour:</strong> "Securing the Future: Blockchain’s Role in Cybersecurity."</li>
+                        <li><strong>Workshops - 3 Hours:</strong> Cybersecurity Basics, Blockchain Fundamentals, Tech Tools.</li>
+                        <li><strong>Challenge Announcement - 30 Minutes:</strong> Reveal hackathon themes and problem statements.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-3" class="timeline-content">
+                <div class="timeline-card">
+                    <h3>Tutorials and Workshops</h3>
+                    <ul>
+                        <li>Blockchain Technology Overview</li>
+                        <li>Cybersecurity Tools Demonstration</li>
+                        <li>Practical Application of Python in Cybersecurity</li>
+                    </ul>
+                    <p>Workshops will be led by industry experts and will include interactive activities.</p>
+                </div>
+            </div>
+            <div id="content-4" class="timeline-content">
+                <div class="timeline-card">
+                    <h3>Demonstration and Final Presentation</h3>
+                    <ul>
+                        <li><strong>Development Phase - 6 Hours:</strong> Teams build prototypes with mentor support.</li>
+                        <li><strong>Presentation and Judging - 3 Hours:</strong> Demo and Q&A per team.</li>
+                        <li><strong>Judging Criteria:</strong>
+                            <ul>
+                                <li>Innovation - 20%</li>
+                                <li>Technical Feasibility - 30%</li>
+                                <li>Real-World Impact - 20%</li>
+                                <li>Presentation - 10%</li>
+                                <li>Teamwork - 20%</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Prizes Section -->
+    <section id="prizes" class="section alternate">
+        <h2>Prizes</h2>
+        <p>Recognizing and rewarding exceptional talent and creativity during the hackathon.</p>
+        <div class="prizes-container">
+            <div class="prize-item">
+                <i class="fas fa-trophy"></i>
+                <h3>First Place</h3>
+                <p>$700 (worth prize/gift card)</p>
+            </div>
+            <div class="prize-item">
+                <i class="fas fa-award"></i>
+                <h3>Second Place</h3>
+                <p>$500 (worth prize/gift card)</p>
+            </div>
+            <div class="prize-item">
+                <i class="fas fa-medal"></i>
+                <h3>Third Place</h3>
+                <p>$250 (worth prize/gift card)</p>
+            </div>
+        </div>
+        <h3>Special Awards</h3>
+        <ul class="special-awards">
+            <li><i class="fas fa-lightbulb"></i> Most Innovative Solution</li>
+            <li><i class="fas fa-users"></i> Best High School Team</li>
+            <li><i class="fas fa-thumbs-up"></i> Audience Choice Award</li>
+        </ul>
     </section>
 
-        <!-- Details Section -->
-    <section id="details" class="section alternate">
-        <h2>Hackathon Details</h2>
-        <h3>Day 1 (Learning and Ideation)</h3>
-        <ul>
-            <li><strong>Keynote:</strong> "Securing the Future: Blockchain’s Role in Cybersecurity"</li>
-            <li><strong>Workshops:</strong></li>
-            <ul>
-                <li>Cybersecurity Basics</li>
-                <li>Blockchain Fundamentals</li>
-                <li>Hands-on Tools: Gustavo, Solidity, Python</li>
-            </ul>
-            <li><strong>Challenge Announcement:</strong> Themes and problem statements</li>
-            <li><strong>Team Formation:</strong> Ideation and collaboration</li>
-        </ul>
-        <h3>Day 2 (Demonstration and Final Presentation)</h3>
-        <ul>
-            <li><strong>Development Phase:</strong> Build solutions with mentor support</li>
-            <li><strong>Submission:</strong> Working prototype and pitch deck</li>
-            <li><strong>Presentation and Judging:</strong> Demo and Q&A</li>
-        </ul>
-    </section>
     <!-- Sponsors Section -->
     <section id="sponsors" class="section">
         <h2>Sponsors</h2>
         <p>We thank our sponsors for making the InCySe Hackathon possible.</p>
         <div class="sponsor-images">
-            <img src="sponsor1.jpg" alt="Sponsor 1">
-            <img src="sponsor2.jpg" alt="Sponsor 2">
-            <img src="sponsor3.jpg" alt="Sponsor 3">
+            <img src="src/NSF_logo.png" alt="Sponsor 1">
+            <!-- <img src="sponsor2.jpg" alt="Sponsor 2"> -->
+            <!-- <img src="sponsor3.jpg" alt="Sponsor 3"> -->
         </div>
     </section>
 
