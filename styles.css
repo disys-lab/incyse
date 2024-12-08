@@ -16,7 +16,8 @@ body {
 nav {
     background: black;
     color: white;
-    padding: 10px 20px;
+    height: 90px;
+    padding: 5px 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,11 +26,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 nav .logo img {
     height: 140px;
     max-width: 100%;
+    object-fit: contain; /* Prevent distortion */
+    margin-top: 10px;
 }
 
 nav ul {
@@ -44,6 +48,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    line-height: 70px;
 }
 
 nav ul li a:hover {
@@ -53,6 +58,8 @@ nav ul li a:hover {
 nav .right-logo img {
     height: 120px;
     max-width: 100%;
+    object-fit: contain; /* Prevent distortion */
+    margin-top: 10px;
 }
 
 /* Header */
