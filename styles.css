@@ -194,6 +194,11 @@ ul li i {
     transform: scale(1.1);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+.sponsor-images img:nth-child(2) {
+    max-width: 400px; /* Increase the width of the second sponsor */
+    width: 100%; /* Keep it responsive */
+    height: auto;
+}
 
 /* Contact Form */
 form {
