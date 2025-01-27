@@ -15,6 +15,14 @@ window.addEventListener('scroll', () => {
 // Add scroll progress bar dynamically
 document.body.insertAdjacentHTML('beforeend', '<div id="progress-bar"></div>');
 
+// // Scroll to top functionality
+// function scrollToTop() {
+//     window.scrollTo({
+//         top: 0,
+//         behavior: 'smooth',
+//     });
+// }
+
 // Section animations on scroll
 const sections = document.querySelectorAll('.section');
 const observer = new IntersectionObserver(
@@ -88,3 +96,22 @@ document.querySelectorAll('nav ul li a').forEach(link => {
         }
     });
 });
+// Scroll to top functionality
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Smooth scrolling
+    });
+}
+
+// Show/hide the scroll-to-top button on scroll
+const scrollTopButton = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // Show button after scrolling 300px
+        scrollTopButton.style.display = 'block';
+    } else {
+        scrollTopButton.style.display = 'none';
+    }
+});
+
