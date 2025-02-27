@@ -12,21 +12,28 @@
     <!-- Navbar -->
     <nav>
         <div class="logo">
-            <img src="src/file.png" alt="InCySe Logo" height="200">
+            <img src="src/file.png" alt="InCySe Logo" height="140">
         </div>
         <ul>
             <li><a href="#objectives">Objectives</a></li>
-            <li><a href="#overview">Overview</a></li>
+            <li class="dropdown">
+                <a href="#">Overview <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#findtheflag">Find The Flag</a></li>
+                    <li><a href="#decentralization">Identify, Build, and Demonstrate</a></li>
+                </ul>
+            </li>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#prizes">Prizes</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="right-logo">
-            <img src="src/OSU_logo.png" alt="Second Logo" height="50">
+            <img src="src/OSU_logo.png" alt="Second Logo" height="120">
         </div>
-        <!-- <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button> -->
     </nav>
+    
+    
 
     <!-- Hero Section -->
     <header>
@@ -71,7 +78,9 @@
         <p><strong>Mode:</strong> Hybrid </p>
         <p><strong>Eligibility:</strong> Teams of up to 2 people. Challenge is open to graduate and undergraduate students from all disciplines!</p>
         <p><strong>Objective:</strong> Identify, build and demonstrate a valid decentralized application for a specific industrial use case.
-            Your objective will be to build a working blockchain based, decentralized prototype using state-of-the-art tools such as IPFS (https://ipfs.tech/) and Ethereum (https://ethereum.org/en/) in areas including but not limited to: </p>
+            Your objective will be to build a working blockchain based, decentralized prototype using state-of-the-art tools such as 
+            <a href="https://ipfs.tech/">IPFS</a> and 
+            <a href="https://ethereum.org/en/">Ethereum</a> in areas including but not limited to: </p>
         <ul>
             <li><i class="fas fa-check-circle"></i> Decentralized Anomaly Detection using Smart Contracts</li>
             <li><i class="fas fa-users"></i> Energy Trading and Real-time Market Settlement.</li>

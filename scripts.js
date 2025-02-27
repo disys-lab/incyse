@@ -96,6 +96,38 @@ document.querySelectorAll('nav ul li a').forEach(link => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.createElement("div");
+    menuToggle.innerHTML = "☰";
+    menuToggle.style.fontSize = "30px";
+    menuToggle.style.cursor = "pointer";
+    menuToggle.style.display = "none";
+    menuToggle.style.marginRight = "20px";
+
+    const nav = document.querySelector("nav");
+    const ul = document.querySelector("nav ul");
+    
+    nav.insertBefore(menuToggle, ul);
+
+    menuToggle.addEventListener("click", function () {
+        ul.classList.toggle("show-menu");
+    });
+
+    function checkScreenSize() {
+        if (window.innerWidth <= 768) {
+            ul.style.display = "none";
+            menuToggle.style.display = "block";
+        } else {
+            ul.style.display = "flex";
+            menuToggle.style.display = "none";
+        }
+    }
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+});
+
+
 // Scroll to top functionality
 function scrollToTop() {
     window.scrollTo({
