@@ -319,6 +319,7 @@ ul li i {
 }
 
 
+
 #prizes {
     background: linear-gradient(to bottom, #fff, #e6f7ff); /* Subtle gradient */
     color: #333;
@@ -367,22 +368,23 @@ ul li i {
     border-color: #0078D4;
 }
 
+.prize-item h3 {
+    font-size: 1.5rem;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
 .prize-item i {
+    display: block;
     font-size: 2.5rem;
     color: #FF6F61;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
+    margin: 10px auto;
 }
 
 .prize-item:hover i {
     transform: rotate(15deg);
 }
 
-.prize-item h3 {
-    font-size: 1.5rem;
-    color: #004080;
-    margin-bottom: 10px;
-}
 
 .prize-item p {
     font-size: 1.1rem;
